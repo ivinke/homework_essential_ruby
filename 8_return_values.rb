@@ -49,7 +49,7 @@ puts "#{sum(first_dataset)}"
 def mean(list_of_numbers)
   # Let's re-use the work we did above in the sum method
   a = sum(list_of_numbers)
-  return a/list_of_numbers.length
+  return a.to_f / list_of_numbers.length
   # ====================
   # Your code goes here.
   # ====================
