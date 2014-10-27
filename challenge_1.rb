@@ -13,12 +13,22 @@
 #   we usually have to do some research on how the task is done:
 #   http://en.wikipedia.org/wiki/Mortgage_calculator
 
+
 def pmt(rate, nper, pv)
-  # =========================================================
-  # Your code to implement the method goes here.
-  # You shouldn't have to write or change code anywhere else.
-  # =========================================================
+
+  total = (rate*pv)*(1+rate)**nper
+  total2 = ((1+rate)**nper)-1
+  total3 = total / total2
+
+return total3
+
+
 end
+
+first_dataset = pmt(0.0404/12, 60, 30000)
+puts "#{(first_dataset)}"
+
+
 
 # Example usage of the method is below. Uncomment to test your pmt method,
 #   and once you have successfully defined it, re-comment them (before
