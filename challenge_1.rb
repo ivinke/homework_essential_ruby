@@ -26,7 +26,6 @@ return total3
 end
 
 first_dataset = pmt(0.0404/12, 60, 30000)
-puts "#{(first_dataset)}"
 
 
 
@@ -35,6 +34,6 @@ puts "#{(first_dataset)}"
 #   starting challenge_2.rb).
 
 # the_payment = pmt(0.0404/12, 60, 30000)
-# puts "Your monthly payment will be $#{the_payment.round(2)}."
+puts "Your monthly payment will be $#{first_dataset}."
 
 # You should get $553.04.
